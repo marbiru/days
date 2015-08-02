@@ -1,0 +1,65 @@
+.basic {
+  font-size: 24px;
+  font-weight: normal;
+  font-family: "Raleway:200", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-align: center;
+}
+.instructions {
+  font-size: 18px;
+  color: #777;
+  line-height: 1.6;
+  font-weight: 100;
+  text-align: center;
+}
+.buttons {
+  text-align:center;
+}
+
+h1 {
+  color: #4B4B4D;
+  font-size: 60px;
+  font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-align: center;
+}
+
+h2 {
+  color: #4B4B4D;
+  font-size: 40px;
+  font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-align: center;
+}
+
+p {
+  color: #4B4B4D;
+  font-size: 28px;
+  font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-align: center;
+}
+
+#subhead {
+  color: #4B4B4D;
+  font-size: 25px;
+  font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-align: center;
+}
+
+.note {
+  color: #4B4B4D;
+  font-size: 16px;
+  font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-align: center;
+}
+
+.emphasis {
+  color: #4B4B4D;
+  font-size: 60px;
+  font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-align: center;
+}
+
+/* Background pattern from subtlepatterns.com */
+
+body {
+    background-image: url("geometry2.png");
+}
+
