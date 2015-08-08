@@ -1,18 +1,24 @@
+// from http://stackoverflow.com/questions/901115/how-can-i-get-query-string-values-in-javascript
+// need to learn how to do this myself
+
+function getParameterByName(name) {
+    name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+    var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+        results = regex.exec(location.search);
+    return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+}
+
 var mil_day = 86400000;
 
-$( "#submit" ).click(function () {
+var birthday = parseInt(getParameterByName( "b" ));
 
-  var birthday_string = $( "#datepicker" ).val();
+var today_date = Date();
 
-  var birthday = Date.parse( birthday_string );
+var today_days = Date.parse(today_date);
 
-	var today_date = Date();
-  
-	var today_days = Date.parse(today_date);
+var days_old = Math.floor((today_days - birthday)/mil_day);
 
-	var days_old = Math.floor((today_days - birthday)/mil_day);
-
-	days_old_output.innerHTML = days_old;
+days_old_output.innerHTML = days_old;
 
   if (days_old < 10000) {
     var big_milestone = 10000;
@@ -92,9 +98,3 @@ $( "#submit" ).click(function () {
   small_milestone_date = new Date(birthday + mil_day*small_milestone);
 
   small_milestone_date_output.innerHTML = small_milestone_date.toUTCString().substring(0, 16);
-
-  var share_link = "<a href='http://marbiru.github.io/days/share.html" + "?b=" + birthday + "'>My Share Link</a>";
-
-  share_link_output.innerHTML = share_link;
-
-});
