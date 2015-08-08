@@ -93,7 +93,7 @@ $( "#submit" ).click(function () {
 
   small_milestone_date_output.innerHTML = small_milestone_date.toUTCString().substring(0, 16);
 
-  var share_link = "<a href='http://marbiru.github.io/days/share.html" + "?b=" + birthday + "'>My Share Link</a>";
+  var share_link = "<a href='http://marbiru.github.io/days/share.html" + "?b=" + birthday + "'>here</a>";
 
   share_link_output.innerHTML = share_link;
 
