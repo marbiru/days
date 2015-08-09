@@ -6,17 +6,11 @@ function getParameterByName(name) {
     var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
         results = regex.exec(location.search);
     return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
-};
+}
 
 var mil_day = 86400000;
 
-var birthday_b36 = parseInt(getParameterByName( "b" ));
-
-console.log(birthday_b36);
-
-var birthday = parseInt(birthday_b36, 16);
-
-console.log(birthday);
+var birthday = parseInt(getParameterByName( "b" ));
 
 var today_date = Date();
 
