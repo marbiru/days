@@ -10,7 +10,9 @@ function getParameterByName(name) {
 
 var mil_day = 86400000;
 
-var birthday = parseInt(getParameterByName( "b" ));
+var birthday_b36 = parseInt(getParameterByName( "b" ));
+
+var birthday = parseInt(birthday_b36, 36);
 
 var today_date = Date();
 
