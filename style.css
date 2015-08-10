@@ -19,10 +19,6 @@ p {
   text-align: center;
 }
 
-button {
-  font-size: 40px;
-}
-
 #subhead {
   color: #4B4B4D;
   font-size: 25px;
@@ -45,8 +41,11 @@ button {
   text-align: center;
 }
 
-.fb-share-button {
-  text-align: center;
+.mc_embed_signup {
+  margin: auto;
+  width: 60%;
+  border:3px solid #8AC007;
+  padding: 10px;
 }
 
 /* Background pattern from subtlepatterns.com */
@@ -54,4 +53,3 @@ button {
 body {
     background-image: url("geometry2.png");
 }
-
