@@ -32,6 +32,15 @@
 </head>
 <body>
 
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.4";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
 <h1> Days </h1>
 
 <p id="subhead">
@@ -44,9 +53,13 @@
 	</span>
 </p>
 
-<p><br />
+<p>
 	Your date of birth is: 
-		<input type="date" maxlength="10" size="14" id="datepicker">
+</p>
+<p>
+  <input type="date" maxlength="10" size="14" id="datepicker">
+</p>
+<p>
 		<button id="submit">Let's go!</button>
 </p>
 
@@ -68,6 +81,8 @@
 	We are not storing your data and are not tracking who you are, <br />
 	but honestly every big internet company probably does know your birthday already 
 </p>
+
+<div class="fb-share-button" data-href="http://www.marbiru.com/days" data-layout="button"></div>
 
 <p class="note"> for Ben, by <a href="http://www.uribram.com">Uri</a></p>
 
