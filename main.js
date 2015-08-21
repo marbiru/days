@@ -16,22 +16,20 @@ $( "#submit" ).click(function () {
 
 for (var counter = 0; ; counter++) {
   current_milestone = Number(counter + "0000");
-  console.log(current_milestone);
-  console.log(typeof(current_milestone));
   if (days_old < current_milestone) {
     big_milestone = current_milestone;
     break;
     };
 };
 
-  big_milestone_output.innerHTML = big_milestone;
+big_milestone_output.innerHTML = big_milestone;
 
-	big_milestone_date = new Date(birthday + mil_day*big_milestone);
+big_milestone_date = new Date(birthday + mil_day*big_milestone);
 
 // should this next line be jQuery?
-	big_milestone_date_output.innerHTML = big_milestone_date.toUTCString().substring(0, 16);
+big_milestone_date_output.innerHTML = big_milestone_date.toUTCString().substring(0, 16);
 
-  var small_milestone_array = [
+var small_milestone_array = [
   7000,
   7777,
   8000,
