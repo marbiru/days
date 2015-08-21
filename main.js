@@ -14,17 +14,15 @@ $( "#submit" ).click(function () {
 
 	days_old_output.innerHTML = days_old;
 
-  if (days_old < 10000) {
-    var big_milestone = 10000;
-  } else if (days_old < 20000) {
-    var big_milestone = 20000;
-  } else if (days_old < 30000) {
-    var big_milestone = 30000;
-  } else if (days_old < 40000) {
-    var big_milestone = 40000;
-  } else {
-    var big_milestone = 100000;
-  };
+for (var counter = 0; ; counter++) {
+  current_milestone = Number(counter + "0000");
+  console.log(current_milestone);
+  console.log(typeof(current_milestone));
+  if (days_old < current_milestone) {
+    big_milestone = current_milestone;
+    break;
+    };
+};
 
   big_milestone_output.innerHTML = big_milestone;
 
