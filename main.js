@@ -49,40 +49,11 @@ for (var counter = 0; ; counter++) {
   45000,
   ]
 
-  //all this should be done in a for i in small_milestone_array loop, I just don't know how yet :)
-
-  if (days_old < small_milestone_array[0]) {
-    var small_milestone = small_milestone_array[0];
-  } else if (days_old < small_milestone_array[1]) {
-    var small_milestone = small_milestone_array[1];
-  } else if (days_old < small_milestone_array[2]) {
-    var small_milestone = small_milestone_array[2];
-  } else if (days_old < small_milestone_array[3]) {
-    var small_milestone = small_milestone_array[3];
-  } else if (days_old < small_milestone_array[4]) {
-    var small_milestone = small_milestone_array[4];
-  } else if (days_old < small_milestone_array[5]) {
-    var small_milestone = small_milestone_array[5];
-  } else if (days_old < small_milestone_array[6]) {
-    var small_milestone = small_milestone_array[6];
-  } else if (days_old < small_milestone_array[7]) {
-    var small_milestone = small_milestone_array[7];
-  } else if (days_old < small_milestone_array[8]) {
-    var small_milestone = small_milestone_array[8];
-  } else if (days_old < small_milestone_array[9]) {
-    var small_milestone = small_milestone_array[9];
-  } else if (days_old < small_milestone_array[10]) {
-    var small_milestone = small_milestone_array[10];
-  } else if (days_old < small_milestone_array[11]) {
-    var small_milestone = small_milestone_array[11];
-  } else if (days_old < small_milestone_array[12]) {
-    var small_milestone = small_milestone_array[12];
-  } else if (days_old < small_milestone_array[13]) {
-    var small_milestone = small_milestone_array[13];
-  } else if (days_old < small_milestone_array[14]) {
-    var small_milestone = small_milestone_array[14];
-  } else {
-    var small_milestone = 50000;
+  for (var counter = 0; counter <= 14; counter++) {
+    if (days_old < small_milestone_array[counter]) {
+      small_milestone = small_milestone_array[counter];
+      break;
+    };
   };
 
   small_milestone_output.innerHTML = small_milestone;
