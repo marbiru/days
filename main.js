@@ -14,10 +14,9 @@ $( "#submit" ).click(function () {
 
 	days_old_output.innerHTML = days_old;
 
-for (var counter = 0; ; counter++) {
-  current_milestone = Number(counter + "0000");
-  if (days_old < current_milestone) {
-    big_milestone = current_milestone;
+for (var counter = 10000; ; counter += 10000 ) {
+  if (days_old < counter) {
+    big_milestone = counter;
     break;
     };
 };
