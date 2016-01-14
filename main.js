@@ -19,19 +19,9 @@ for (var counter = 10000; ; counter += 10000 ) {
     };
 };
 
-// old, pre-canvas version 
-
-days_old_output.innerHTML = days_old;
-
-big_milestone_output.innerHTML = big_milestone;
-
 big_milestone_date = new Date(birthday + mil_day*big_milestone);
 
 bm_date_final = big_milestone_date.toUTCString().substring(0, 16);
-
-big_milestone_date_output = big_milestone_date.toUTCString().substring(0, 16);
-// should this next line be jQuery?
-big_milestone_date_output.innerHTML = big_milestone_date.toUTCString().substring(0, 16);
 
 var small_milestone_array = [
   7000,
@@ -58,13 +48,10 @@ var small_milestone_array = [
     };
   };
 
-  small_milestone_output.innerHTML = small_milestone;
 
   small_milestone_date = new Date(birthday + mil_day*small_milestone);
 
   sm_date_final = small_milestone_date.toUTCString().substring(0, 16);
-
-  small_milestone_date_output.innerHTML = small_milestone_date.toUTCString().substring(0, 16);
 
   var share_link = "<a href='http://marbiru.github.io/days/share.html" + "?b=" + birthday + "'>here</a>";
 
