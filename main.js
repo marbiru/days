@@ -67,7 +67,7 @@ context.clearRect(0,0, example.width, example.height);
 context.font = "200 40px sans-serif";
 context.fillStyle= "#000";
 context.textAlign = 'center';
-context.fillText("Today I am " + days_old + " days old", 700, 40);
+context.fillText("Today I am " + days_old + " days old", 700, 60);
 
 context.font = "200 40px sans-serif";
 context.fillStyle= "#4B4B4D";
@@ -87,6 +87,9 @@ context.fillText("I will be " + big_milestone + " days old on " + bm_date_final 
 context.font = "italic 200 28px sans-serif";
 context.fillStyle= "#4B4B4D";
 context.textAlign = 'center';
-context.fillText("How about you? Find out at www.marbiru.com/days", 700, 350);
+context.fillText("How about you? Find out at www.marbiru.com/days", 700, 340);
+
+ window.open(example.toDataURL(),"canvasImage","left=0,top=0,width=" +
+   example.width + ",height=" + example.height +",toolbar=0,resizable=0");
 
 });
