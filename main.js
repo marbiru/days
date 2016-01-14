@@ -74,6 +74,9 @@ var small_milestone_array = [
 
 var example = document.getElementById('example');
 var context = example.getContext('2d');
+
+context.clearRect(0,0, example.width, example.height);
+
 context.font = "40px sans-serif";
 context.fillStyle= "#000";
 context.textAlign = 'center';
