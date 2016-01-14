@@ -83,23 +83,23 @@ context.textAlign = 'center';
 context.fillText("Today I am " + days_old + " days old", 700, 40);
 
 context.font = "40px sans-serif";
-context.fillStyle= "#000";
+context.fillStyle= "#4B4B4D";
 context.textAlign = 'center';
-context.fillText("UPCOMING MILESTONES", 700, 100);
+context.fillText("UPCOMING MILESTONES", 700, 140);
 
 context.font = "40px sans-serif";
 context.fillStyle= "#000";
 context.textAlign = 'center';
-context.fillText("I will be " + small_milestone + " days old on " + sm_date_final , 700, 160);
+context.fillText("I will be " + small_milestone + " days old on " + sm_date_final , 700, 200);
 
 context.font = "40px sans-serif";
 context.fillStyle= "#000";
 context.textAlign = 'center';
-context.fillText("I will be " + big_milestone + " days old on " + bm_date_final , 700, 220);
+context.fillText("I will be " + big_milestone + " days old on " + bm_date_final , 700, 260);
 
-context.font = "40px sans-serif";
-context.fillStyle= "#000";
+context.font = "28px sans-serif";
+context.fillStyle= "#4B4B4D";
 context.textAlign = 'center';
-context.fillText("How about you? Find out at www.marbiru.com/days", 700, 280);
+context.fillText("How about you? Find out at www.marbiru.com/days", 700, 350);
 
 });
