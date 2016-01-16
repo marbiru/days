@@ -58,29 +58,34 @@ var small_milestone_array = [
 var example = document.getElementById('example');
 var context = example.getContext('2d');
 
+// clearing canvas in case user presses submit twice
 context.clearRect(0,0, example.width, example.height);
 
-context.font = "200 40px sans-serif";
+context.rect(0,0,example.width,example.height);
+context.fillStyle="#fafafa";
+context.fill();
+
+context.font = "200 40px raleway";
 context.fillStyle= "#000";
 context.textAlign = 'center';
 context.fillText("Today I am " + days_old + " days old", 700, 60);
 
-context.font = "200 40px sans-serif";
+context.font = "200 40px raleway";
 context.fillStyle= "#4B4B4D";
 context.textAlign = 'center';
 context.fillText("UPCOMING MILESTONES", 700, 140);
 
-context.font = "200 40px sans-serif";
+context.font = "200 40px raleway";
 context.fillStyle= "#000";
 context.textAlign = 'center';
 context.fillText("I will be " + small_milestone + " days old on " + sm_date_final , 700, 200);
 
-context.font = "200 40px sans-serif";
+context.font = "200 40px raleway";
 context.fillStyle= "#000";
 context.textAlign = 'center';
 context.fillText("I will be " + big_milestone + " days old on " + bm_date_final , 700, 260);
 
-context.font = "italic 200 28px sans-serif";
+context.font = "italic 200 28px raleway";
 context.fillStyle= "#4B4B4D";
 context.textAlign = 'center';
 context.fillText("How about you? Find out at www.marbiru.com/days", 700, 340);
@@ -89,11 +94,9 @@ var img = example.toDataURL("image/png;base64;");
 
 anchor = document.getElementById("download");
 anchor.href = img;
-anchor.innerHTML = "download";
+anchor.innerHTML = "Download your results image";
 
-/*
 window.open(example.toDataURL(),"canvasImage","left=0,top=0,width=" +
    example.width + ",height=" + example.height +",toolbar=0,resizable=0");
-*/
 
 });
