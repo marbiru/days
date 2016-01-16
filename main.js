@@ -12,7 +12,7 @@ $( "#submit" ).click(function () {
 
 	var days_old = Math.floor((today_days - birthday)/mil_day);
 
-for (var counter = 10000; ; counter += 10000 ) {
+for (var counter = 10000; ; counter += 10000) {
   if (days_old < counter) {
     big_milestone = counter;
     break;
@@ -53,10 +53,6 @@ var small_milestone_array = [
 
   sm_date_final = small_milestone_date.toUTCString().substring(0, 16);
 
-  var share_link = "<a href='http://marbiru.github.io/days/share.html" + "?b=" + birthday + "'>here</a>";
-
-  share_link_output.innerHTML = share_link;
-
 // new canvas version starts here
 
 var example = document.getElementById('example');
@@ -89,7 +85,15 @@ context.fillStyle= "#4B4B4D";
 context.textAlign = 'center';
 context.fillText("How about you? Find out at www.marbiru.com/days", 700, 340);
 
- window.open(example.toDataURL(),"canvasImage","left=0,top=0,width=" +
+var img = example.toDataURL("image/png;base64;");
+
+anchor = document.getElementById("download");
+anchor.href = img;
+anchor.innerHTML = "download";
+
+/*
+window.open(example.toDataURL(),"canvasImage","left=0,top=0,width=" +
    example.width + ",height=" + example.height +",toolbar=0,resizable=0");
+*/
 
 });
