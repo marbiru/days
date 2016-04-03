@@ -14,24 +14,18 @@ $( "#submit" ).click(function () {
 
 	days_old_output.innerHTML = days_old;
 
-  if (days_old < 10000) {
-    var big_milestone = 10000;
-  } else if (days_old < 20000) {
-    var big_milestone = 20000;
-  } else if (days_old < 30000) {
-    var big_milestone = 30000;
-  } else if (days_old < 40000) {
-    var big_milestone = 40000;
-  } else {
-    var big_milestone = 100000;
-  };
+for (var counter = 10000; ; counter += 10000) {
+  if (days_old < counter) {
+    big_milestone = counter;
+    break;
+    };
+};
 
-  big_milestone_output.innerHTML = big_milestone;
+big_milestone_output.innerHTML = big_milestone;
 
-	big_milestone_date = new Date(birthday + mil_day*big_milestone);
+big_milestone_date = new Date(birthday + mil_day*big_milestone);
 
-// should this next line be jQuery?
-	big_milestone_date_output.innerHTML = big_milestone_date.toUTCString().substring(0, 16);
+big_milestone_date_output.innerHTML = big_milestone_date.toUTCString().substring(0, 16);
 
   var small_milestone_array = [
   7000,
@@ -51,47 +45,20 @@ $( "#submit" ).click(function () {
   45000,
   ]
 
-  //all this should be done in a for i in small_milestone_array loop, I just don't know how yet :)
 
-  if (days_old < small_milestone_array[0]) {
-    var small_milestone = small_milestone_array[0];
-  } else if (days_old < small_milestone_array[1]) {
-    var small_milestone = small_milestone_array[1];
-  } else if (days_old < small_milestone_array[2]) {
-    var small_milestone = small_milestone_array[2];
-  } else if (days_old < small_milestone_array[3]) {
-    var small_milestone = small_milestone_array[3];
-  } else if (days_old < small_milestone_array[4]) {
-    var small_milestone = small_milestone_array[4];
-  } else if (days_old < small_milestone_array[5]) {
-    var small_milestone = small_milestone_array[5];
-  } else if (days_old < small_milestone_array[6]) {
-    var small_milestone = small_milestone_array[6];
-  } else if (days_old < small_milestone_array[7]) {
-    var small_milestone = small_milestone_array[7];
-  } else if (days_old < small_milestone_array[8]) {
-    var small_milestone = small_milestone_array[8];
-  } else if (days_old < small_milestone_array[9]) {
-    var small_milestone = small_milestone_array[9];
-  } else if (days_old < small_milestone_array[10]) {
-    var small_milestone = small_milestone_array[10];
-  } else if (days_old < small_milestone_array[11]) {
-    var small_milestone = small_milestone_array[11];
-  } else if (days_old < small_milestone_array[12]) {
-    var small_milestone = small_milestone_array[12];
-  } else if (days_old < small_milestone_array[13]) {
-    var small_milestone = small_milestone_array[13];
-  } else if (days_old < small_milestone_array[14]) {
-    var small_milestone = small_milestone_array[14];
-  } else {
-    var small_milestone = 50000;
+  for (var counter = 0; counter <= 14; counter++) {
+    if (days_old < small_milestone_array[counter]) {
+      small_milestone = small_milestone_array[counter];
+      break;
+    };
   };
 
-  small_milestone_output.innerHTML = small_milestone;
 
-  small_milestone_date = new Date(birthday + mil_day*small_milestone);
+small_milestone_output.innerHTML = small_milestone;
 
-  small_milestone_date_output.innerHTML = small_milestone_date.toUTCString().substring(0, 16);
+small_milestone_date = new Date(birthday + mil_day*small_milestone);
+
+small_milestone_date_output.innerHTML = small_milestone_date.toUTCString().substring(0, 16);
 
   var share_link = "<a href='http://marbiru.github.io/days/share.html" + "?b=" + birthday + "'>here</a>";
 
