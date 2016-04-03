@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <script src="https://cdn.optimizely.com/js/5409980069.js"></script>
   <title>Days | Marbiru</title>
   <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
   <link rel="stylesheet" href="style.css">
@@ -27,7 +28,7 @@
       ga('create', 'UA-62754798-3', 'auto');
       ga('send', 'pageview');
 
-  </script>
+    </script>
   
 </head>
 <body>
@@ -54,16 +55,18 @@
 		<button id="submit">Let's go!</button>
 </p>
 
-<canvas id="example" width="1440" height="390">
-Sorry, this site requires HTML Canvas :(
-</canvas>
+<p> Today you are <span class="emphasis" id="days_old_output">......</span> days old</p>
+
+<h2> UPCOMING MILESTONES </h2>
+
+<p>You will be <span id="small_milestone_output" class="emphasis">.....</span> days old on <span class="emphasis" id="small_milestone_date_output">.....</span>.<p>
+
+<p>You will be <span id="big_milestone_output" class="emphasis">.....</span> days old on <span class="emphasis" id="big_milestone_date_output">.....</span>.<p>
 
 <p>
   Want to share your result with friends?
   <br /> 
-  <a href="" id="download" download="my_days.png">Download your results image</a>
-  <br />
-  then share on Facebook, Twitter, etc!
+  Get a permanent link to these results <span id="share_link_output">.........</span>
 </p>
 
 <p class="note">
@@ -78,7 +81,7 @@ Sorry, this site requires HTML Canvas :(
 
 <p class="note"> for Ben, by <a href="http://www.uribram.com">Uri</a></p>
 
-<script src="jquery.js"></script>
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 
 <script type="text/javascript" src="main.js"></script>
 
