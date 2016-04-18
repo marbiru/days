@@ -14,6 +14,8 @@ $( "#submit" ).click(function () {
 
 	days_old_output.innerHTML = days_old;
 
+  sharer_output.innerHTML = days_old;
+
 for (var counter = 10000; ; counter += 10000) {
   if (days_old < counter) {
     big_milestone = counter;

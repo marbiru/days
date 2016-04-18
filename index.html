@@ -79,14 +79,12 @@
 
 <script>
 
-var days_example = 15;
-
 document.getElementById('shareBtn').onclick = function() {
   
   FB.ui({
     display: 'popup',
     method: 'share',
-    description: 'I am ' + days_example + ' days old today! How about you?',
+    description: 'I am ' + <span id="sharer_output"></span> + ' days old today! How about you?',
     link: 'http://marbiru.com/days',
     picture: 'http://marbiru.github.io/days/days_fb.jpg',
     href: 'http://marbiru.com/days',
