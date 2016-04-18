@@ -77,25 +77,6 @@
   <br /> 
 <button id="shareBtn" class="btn btn-success clearfix">Share On Facebook</button>
 
-<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-
-<script type="text/javascript" src="main.js"></script>
-
-<script>
-
-document.getElementById('shareBtn').onclick = function() {
-  
-  FB.ui({
-    display: 'popup',
-    method: 'share',
-    description: 'I am ' + days_old + ' days old today! How about you?',
-    link: 'http://marbiru.com/days',
-    picture: 'http://marbiru.github.io/days/days_fb.jpg',
-    href: 'http://marbiru.com/days',
-  }, function(response){});
-}
-</script>
-
 <!-- Begin MailChimp Signup Form -->
 <div id="mc_embed_signup">
 <form action="//uriwrites.us6.list-manage.com/subscribe/post?u=06df92ae864a41392c23ed7e2&amp;id=b97b70a35b" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
@@ -118,6 +99,10 @@ document.getElementById('shareBtn').onclick = function() {
 <!--End mc_embed_signup-->
 
 <p class="note"> for Ben, by <a href="http://www.uribram.com">Uri</a></p>
+
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+<script type="text/javascript" src="main.js"></script>
 
 </body>
 </html>

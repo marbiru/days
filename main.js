@@ -60,5 +60,16 @@ small_milestone_date = new Date(birthday + mil_day*small_milestone);
 
 small_milestone_date_output.innerHTML = small_milestone_date.toUTCString().substring(0, 16);
 
-
 });
+
+document.getElementById('shareBtn').onclick = function() {
+  
+  FB.ui({
+    display: 'popup',
+    method: 'share',
+    description: 'I am ' + days_old + ' days old today! How about you?',
+    link: 'http://marbiru.com/days',
+    picture: 'http://marbiru.github.io/days/days_fb.jpg',
+    href: 'http://marbiru.com/days',
+  }, function(response){});
+}
