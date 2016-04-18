@@ -65,7 +65,7 @@ document.getElementById('shareBtn').onclick = function() {
   FB.ui({
     display: 'popup',
     method: 'share',
-    description: 'I am ' + days_old + ' days old today! How about you?',
+    title: 'I am ' + days_old + ' days old today!',
     link: 'http://marbiru.com/days',
     picture: 'http://marbiru.github.io/days/days_fb.jpg',
     href: 'http://marbiru.com/days',
