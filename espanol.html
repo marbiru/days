@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Days | Marbiru</title>
+  <script src="https://cdn.optimizely.com/js/5409980069.js"></script>
+  <title>D&iacute;as | Marbiru</title>
   <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
   <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Raleway:200">
   <link rel="icon" href="favicon-birthday-cake.ico" type="image/x-icon" />
 
-  <meta property="og:title" content="This is how many days old I am!" />
+  <meta property="og:title" content="How many days old are you?" />
   <meta property="og:site_name" content="Marbiru"/>
-  <meta property="og:url" content="http://www.marbiru.com/days/share.html" />
-  <meta property="og:description" content="(And you can find out how many days old you are as well!)" />
+  <meta property="og:url" content="http://www.marbiru.com/days/" />
+  <meta property="og:description" content="And when is your your next big milestone? Find out now!" />
   <meta property="og:type" content="website" />
 
   <!-- image is by Amanda Tipton/flickr -->
@@ -32,26 +33,31 @@
 </head>
 <body>
 
-<h1><a href="http://marbiru.github.io/days"> Days </a></h1>
-
-<p> Today I am <span class="emphasis" id="days_old_output"></span> days old</p>
-
-<h2> UPCOMING MILESTONES </h2>
-
-<p>I will be <span id="small_milestone_output" class="emphasis">.....</span> days old on <span class="emphasis" id="small_milestone_date_output">.....</span>.<p>
-
-<p>I will be <span id="big_milestone_output" class="emphasis">.....</span> days old on <span class="emphasis" id="big_milestone_date_output">.....</span>.<p>
+<h1> D&iacute;as </h1>
 
 <p>
-  <br />
-  How about you? <br /><a href="http://marbiru.github.io/days">Click here to find out</a>
+  Tu fecha de nacimiento es: 
+</p>
+<p>
+  <input type="date" maxlength="10" size="14" id="datepicker">
+</p>
+<p>
+    <button id="submit">&iexcl;Vamos!</button>
 </p>
 
-<p class="note"> for Ben, by <a href="http://www.uribram.com">Uri</a></p>
+<p> Hoy tienes <span class="emphasis" id="days_old_output">......</span> d&iacute;as</p>
+
+<h2> Hitos pr&oacute;ximos </h2>
+
+<p>Tendr&aacute;s <span id="small_milestone_output" class="emphasis">.....</span> d&iacute;as el <span class="emphasis" id="small_milestone_date_output">.....</span>.<p>
+
+<p>Tendr&aacute;s <span id="big_milestone_output" class="emphasis">.....</span> d&iacute;as el <span class="emphasis" id="big_milestone_date_output">.....</span>.<p>
+
+<p class="note"> Un sitio web de <a href="http://www.uribram.com">Uri</a></p>
 
 <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 
-<script type="text/javascript" src="query.js"></script>
+<script type="text/javascript" src="main.js"></script>
 
 </body>
 </html>
