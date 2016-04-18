@@ -82,6 +82,7 @@ document.getElementById('shareBtn').onclick = function() {
   FB.ui({
     display: 'popup',
     method: 'feed',
+    caption: 'find out how many days old you are!',
     href: 'http://marbiru.com/days',
   }, function(response){});
 }
