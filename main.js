@@ -58,7 +58,9 @@ small_milestone_output.innerHTML = small_milestone;
 
 small_milestone_date = new Date(birthday + mil_day*small_milestone);
 
-small_milestone_date_output.innerHTML = small_milestone_date.toUTCString().substring(0, 16);
+small_milestone_date_trunacted = small_milestone_date.toUTCString().substring(0, 16);
+
+small_milestone_date_output.innerHTML = small_milestone_date_trunacted;
 
 document.getElementById('shareBtn').onclick = function() {
   
@@ -66,7 +68,7 @@ document.getElementById('shareBtn').onclick = function() {
     display: 'popup',
     method: 'share',
     title: 'I am ' + days_old + ' days old today!',
-    description: 'And I will be ' + small_milestone + ' on ' + small_milestone_date + '. How about you? Find out now!',
+    description: 'And I will be ' + small_milestone + ' days old on ' + small_milestone_date_trunacted + '. How about you? Find out now!',
     link: 'http://marbiru.com/days',
     picture: 'http://marbiru.github.io/days/days_fb.jpg',
     href: 'http://marbiru.com/days',
