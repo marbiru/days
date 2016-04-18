@@ -66,7 +66,7 @@ document.getElementById('shareBtn').onclick = function() {
     display: 'popup',
     method: 'share',
     title: 'I am ' + days_old + ' days old today!',
-    description: 'And I will be ' + small_milestone + ' on ' + small_milestone_date + '. How about you? Find out now!'
+    description: 'And I will be ' + small_milestone + ' on ' + small_milestone_date + '. How about you? Find out now!',
     link: 'http://marbiru.com/days',
     picture: 'http://marbiru.github.io/days/days_fb.jpg',
     href: 'http://marbiru.com/days',
