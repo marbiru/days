@@ -60,8 +60,6 @@ small_milestone_date = new Date(birthday + mil_day*small_milestone);
 
 small_milestone_date_output.innerHTML = small_milestone_date.toUTCString().substring(0, 16);
 
-});
-
 document.getElementById('shareBtn').onclick = function() {
   
   FB.ui({
@@ -73,3 +71,5 @@ document.getElementById('shareBtn').onclick = function() {
     href: 'http://marbiru.com/days',
   }, function(response){});
 }
+
+});
