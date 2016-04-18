@@ -33,6 +33,24 @@
 </head>
 <body>
 
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '197599960590630',
+      xfbml      : true,
+      version    : 'v2.5'
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "https://connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
+
 <h1> How Many Days Old Are You?</h1>
 
 <p>
@@ -53,13 +71,21 @@
 
 <p>You will be <span id="big_milestone_output" class="emphasis">.....</span> days old on <span class="emphasis" id="big_milestone_date_output">.....</span>.<p>
 
-
-
 <p>
   Want to share your result with friends?
   <br /> 
-  Get a permanent link to these results <span id="share_link_output">.........</span>
-</p>
+<button id="shareBtn" class="btn btn-success clearfix">Share On Facebook</button>
+
+<script>
+document.getElementById('shareBtn').onclick = function() {
+  
+  FB.ui({
+    display: 'popup',
+    method: 'share',
+    href: 'http://marbiru.com/days',
+  }, function(response){});
+}
+</script>
 
 <p class="note">
 	We are not storing your data and are not tracking who you are, <br />
