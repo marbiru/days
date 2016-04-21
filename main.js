@@ -62,7 +62,7 @@ small_milestone_date_trunacted = small_milestone_date.toUTCString().substring(0,
 
 small_milestone_date_output.innerHTML = small_milestone_date_trunacted;
 
-$( "#facebook_share_button" ).click = function() {
+document.getElementById( 'facebook_share_button' ).onclick = function() {
   
   FB.ui({
     display: 'popup',
@@ -73,7 +73,8 @@ $( "#facebook_share_button" ).click = function() {
     picture: 'http://marbiru.github.io/days/days_fb.jpg',
     href: 'http://marbiru.com/days',
   }, function(response){});
-}
+
+};
 
 twitter_share_output.innerHTML = 
 
