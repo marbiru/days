@@ -62,7 +62,7 @@ small_milestone_date_trunacted = small_milestone_date.toUTCString().substring(0,
 
 small_milestone_date_output.innerHTML = small_milestone_date_trunacted;
 
-document.getElementById('shareBtn').onclick = function() {
+$( "#facebook_share_button" ).click = function() {
   
   FB.ui({
     display: 'popup',
@@ -74,5 +74,12 @@ document.getElementById('shareBtn').onclick = function() {
     href: 'http://marbiru.com/days',
   }, function(response){});
 }
+
+twitter_share_output.innerHTML = 
+
+'<input type="button" value="Share On Twitter" class="button" onclick="window.open(&quot;https://twitter.com/share?url=http://www.marbiru.com/days&text=I am '
+  + days_old
+  + ' days old today! How about you?'
+  + '&quot;)" />';
 
 });
