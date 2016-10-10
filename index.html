@@ -2,11 +2,12 @@
 <html>
 <head>
   <script src="https://cdn.optimizely.com/js/5409980069.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-
-  <title>Days Old?</title>
-  <link rel="stylesheet" href="assets/stylesheets/main.css">
-  <link rel="icon" href="assets/images/favicon-birthday-cake.ico" type="image/x-icon" />
+  <title>Days | Marbiru</title>
+  <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Raleway:200">
+  <link rel="icon" href="favicon-birthday-cake.ico" type="image/x-icon" />
 
   <meta property="fb:app_id" content="197599960590630" />
   <meta property="og:title" content="How many days old are you?" />
@@ -28,10 +29,9 @@
       ga('create', 'UA-62754798-3', 'auto');
       ga('send', 'pageview');
 
-  </script>
+    </script>
   
 </head>
-
 <body>
 
 <script>
@@ -52,96 +52,63 @@
    }(document, 'script', 'facebook-jssdk'));
 </script>
 
-<!--Header and logo -->
+<h1> How Many Days Old Are You?</h1>
 
-  <header class="primary-header container group">
+<p>
+	Your date of birth is: 
+</p>
+<p>
+  <input type="date" maxlength="10" size="14" placeholder="mm/dd/yyyy" id="datepicker">
+</p>
+<p>
+		<button id="submit">Let's go!</button>
+</p>
 
-    <h1 class="logo"> 
-      <a href="index.html">How Many Days Old<br> Are You?</a>
-    </h1>
+<p> Today you are <span class="emphasis" id="days_old_output">......</span> days old</p>
 
-    <nav class="nav primary-nav">
-      <ul>
-        <li></li>
-        <li></li>
-        <li></li>
-      </ul>
-    </nav>
+<h2> UPCOMING MILESTONES </h2>
 
-  </header>
+<p>You will be <span id="small_milestone_output" class="emphasis">.....</span> days old on <span class="emphasis" id="small_milestone_date_output">.....</span>.<p>
 
-  <!--Main Content-->
+<p>You will be <span id="big_milestone_output" class="emphasis">.....</span> days old on <span class="emphasis" id="big_milestone_date_output">.....</span>.<p>
 
-  <section class="container hero">
-    <fieldset class="question">
+<p>
+  Want to share your result with friends?
+  <br /> 
+</p>
+<p>
+<button id="facebook_share_button">Share On Facebook</button>
+<br />
+<br />
+<span id="twitter_share_output"><button id="twitter_share_button">Share On Twitter</button></span>
+</p>
 
-      <label>
-        Your date of birth:
-      </label>
-        <input type="date" maxlength="10" size="14" placeholder="mm/dd/yyyy" id="datepicker">
-        <input class="btn btn-alt" id="submit" type="submit" name="submit" value="Let's Go!">
-    </fieldset>
+<!-- Begin MailChimp Signup Form -->
+<div id="mc_embed_signup">
+<form action="//uriwrites.us6.list-manage.com/subscribe/post?u=06df92ae864a41392c23ed7e2&amp;id=b97b70a35b" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <div id="mc_embed_signup_scroll">
+  <p>Marbiru makes cool things; be the first to hear about them.</p>
+<div class="mc-field-group">
+  <p for="mce-EMAIL">Email Address:
+  <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+</div>
+  <div id="mce-responses" class="clear">
+    <div class="response" id="mce-error-response" style="display:none"></div>
+    <div class="response" id="mce-success-response" style="display:none"></div>
+  </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_06df92ae864a41392c23ed7e2_b97b70a35b" tabindex="-1" value=""></div>
+    <div class="clear"><input type="submit" value="Keep Me Up To Date!" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+    </div>
+</form>
+</div>
 
-    <article class="question-output">
-      Today you are <span id="days_old_output">......</span> days old!
-      <br>Amazing!
-    </article>
+<!--End mc_embed_signup-->
 
+<p class="note">by <a href="http://www.uribram.com">Uri</a> and <a href="https://petetanru.github.io/">Pete</a>.<br />for Ben</p>
 
-  </section>  
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 
-  <section class="row">
-    <div class="grid">
-
-    <!-- Small milestone -->
-
-    <section class="col-1-3">
-      <h2> Upcoming small Milestones </h2>
-      <p>You will be <span id="small_milestone_output" class="emphasis">.....</span> days old on <span class="emphasis" id="small_milestone_date_output">.....</span>.</p>
-    </section><!--
-
-    big milestone
-
-    --><section class="col-1-3">
-      <h2>Upcoming big milestones</h2>
-      <p>You will be <span id="big_milestone_output" class="emphasis">.....</span> days old on <span class="emphasis" id="big_milestone_date_output">.....</span>.</p>
-    </section><!--
-
-    share results
-      
-    --><section class="col-1-3">
-    <h2>Share your results!</h2>
-    <p>
-      <button id="facebook_share_button">Share On Facebook</button>
-      <span id="twitter_share_output"><button id="twitter_share_button">Share On Twitter</button></span>
-    </p>
-
-  <!-- Begin MailChimp Signup Form -->
-  <div id="mc_embed_signup">
-  <form action="//uriwrites.us6.list-manage.com/subscribe/post?u=06df92ae864a41392c23ed7e2&amp;id=b97b70a35b" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-      <div id="mc_embed_signup_scroll">
-    <p>Marbiru makes cool things; be the first to hear about them.</p>
-  <div class="mc-field-group">
-    <p for="mce-EMAIL">Email Address:
-    <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
-  </div>
-    <div id="mce-responses" class="clear">
-      <div class="response" id="mce-error-response" style="display:none"></div>
-      <div class="response" id="mce-success-response" style="display:none"></div>
-    </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-      <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_06df92ae864a41392c23ed7e2_b97b70a35b" tabindex="-1" value=""></div>
-      <div class="clear"><input type="submit" value="Keep Me Up To Date!" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
-      </div>
-  </form>
-  </div>
-
-  <!--End mc_embed_signup-->
-  <footer>
-    <small>for Ben, by <a href="http://www.uribram.com">Uri</a></small>
-  </footer>
-
-  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-  <script type="text/javascript" src="main.js"></script>
+<script type="text/javascript" src="main.js"></script>
 
 </body>
 </html>
