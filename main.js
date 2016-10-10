@@ -28,17 +28,6 @@ big_milestone_date = new Date(birthday + mil_day*big_milestone);
 big_milestone_date_output.innerHTML = big_milestone_date.toUTCString().substring(0, 16);
 
   var small_milestone_array = [
-  1000,
-  1111,
-  2000,
-  2222,
-  3000,
-  3333,
-  4000,
-  4444,
-  5000,
-  5555,
-  6000,
   7000,
   7777,
   8000,
