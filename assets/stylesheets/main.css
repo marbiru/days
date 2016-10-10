@@ -189,6 +189,7 @@ h5 {
   font-weight: 400;
   text-transform: uppercase;
 }
+.emphasis,
 strong {
   font-weight: 400;
 }
