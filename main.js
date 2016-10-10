@@ -1,7 +1,6 @@
 var mil_day = 86400000;
 
 $( "#submit" ).click(function () {
-  alert('button clicked');
 
   var birthday_string = $( "#datepicker" ).val();
 

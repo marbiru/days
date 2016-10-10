@@ -55,7 +55,7 @@ Customize
 */
 
 body {
-  background: #293f50;
+  background-image: url("../images/wet_snow.png");
   color: #888;
   font: 300 16px/22px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
@@ -216,11 +216,11 @@ p a {
 }
 .primary-header a,
 .primary-footer a {
-  color: #fff;
+  color: #648880;
 }
 .primary-header a:hover,
 .primary-footer a:hover {
-  color: #648880;
+  color: #a9b2b9;
 }
 
 /*
@@ -335,7 +335,7 @@ Primary footer
 */
 
 .hero {
-  color: #fff;
+  color: #648880;
   line-height: 44px;
   padding: 22px 80px 66px 80px;
   text-align: center;

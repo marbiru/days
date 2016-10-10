@@ -3,7 +3,6 @@
 <head>
   <script src="https://cdn.optimizely.com/js/5409980069.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <script type="text/javascript" src="main.js"></script>
 
   <title>Days Old?</title>
   <link rel="stylesheet" href="assets/stylesheets/main.css">
@@ -59,7 +58,7 @@
 
     <h1 class="logo"> 
       <a href="index.html">How Many Days Old<br> Are You?</a>
-    </h1>s
+    </h1>
 
     <nav class="nav primary-nav">
       <ul>
@@ -81,12 +80,14 @@
       </label>
         <input type="date" maxlength="10" size="14" placeholder="mm/dd/yyyy" id="datepicker">
         <input class="btn btn-alt" id="submit" type="submit" name="submit" value="Let's Go!">
+    </fieldset>
 
     <article class="question-output">
-      Today you are <span id="days_old_output">......</span> days old
+      Today you are <span id="days_old_output">......</span> days old!
+      <br>Amazing!
     </article>
 
-    </fieldset>
+
   </section>  
 
   <section class="row">
@@ -139,7 +140,8 @@
     <small>for Ben, by <a href="http://www.uribram.com">Uri</a></small>
   </footer>
 
-
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <script type="text/javascript" src="main.js"></script>
 
 </body>
 </html>
