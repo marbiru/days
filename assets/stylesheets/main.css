@@ -46,6 +46,10 @@ table {
   border-spacing: 0;
 }
 
+p {
+  font-size: 14px;
+}
+
 /* style begins */
 
 /*
@@ -417,6 +421,10 @@ textarea {
 
 .answer-output{
   font-size:22px;
+}
+
+.mc-field-group {
+  margin-bottom: -40px;
 }
 
 /*
