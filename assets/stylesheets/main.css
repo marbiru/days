@@ -46,10 +46,6 @@ table {
   border-spacing: 0;
 }
 
-p {
-  font-size: 14px;
-}
-
 /* style begins */
 
 /*
@@ -361,7 +357,7 @@ Primary footer
 .hero {
   color: #648880;
   line-height: 44px;
-  padding: 22px 80px 44px 80px;
+  padding: 22px 20px 44px 20px;
   text-align: center;
 }
 .hero h2 {
