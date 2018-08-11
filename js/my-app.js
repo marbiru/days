@@ -50,6 +50,21 @@ big_milestone_date = new Date(birthday + mil_day*big_milestone);
 big_milestone_date_output.innerHTML = big_milestone_date.toUTCString().substring(0, 16).toUpperCase();
 
   var small_milestone_array = [
+  100,
+  200,
+  300,
+  400,
+  500,
+  600,
+  700,
+  800,
+  900,
+  1000,
+  2000,
+  3000,
+  4000,
+  5000,
+  6000,
   7000,
   7777,
   8000,
@@ -67,8 +82,9 @@ big_milestone_date_output.innerHTML = big_milestone_date.toUTCString().substring
   45000,
   ]
 
+var small_milestone_array_length = len(small_milestone_array);
 
-  for (var counter = 0; counter <= 14; counter++) {
+  for (var counter = 0; counter <= small_milestone_array_length; counter++) {
     if (days_old < small_milestone_array[counter]) {
       small_milestone = small_milestone_array[counter];
       break;
