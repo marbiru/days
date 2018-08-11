@@ -36,7 +36,7 @@ $$( "#submit" ).click(function () {
 
   $$('#amazing').text("Amazing!");
 
-for (var counter = 10000; ; counter += 10000) {
+for (var counter = 5000; ; counter += 5000) {
   if (days_old < counter) {
     big_milestone = counter;
     break;
@@ -73,16 +73,35 @@ var small_milestone_array = [
   11111,
   12000,
   12345,
-  15000,
+  13000,
+  14000,
+  16000,
+  17000,
+  18000,
   19000,
+  21000,
+  22000,
   22222,
-  25000,
+  23000,
+  24000,
+  26000,
+  27000,
+  28000,
   29000,
-  35000,
-  45000,
+  31000,
+  32000,
+  33000,
+  34000,
+  36000,
+  37000,
+  38000,
+  39000,
+  44000,
   ];
 
-  for (var counter = 0; counter <= 29; counter++) {
+  var small_milestone_array_length = small_milestone_array.length;
+
+  for (var counter = 0; counter <= small_milestone_array_length; counter++) {
     if (days_old < small_milestone_array[counter]) {
       small_milestone = small_milestone_array[counter];
       break;
