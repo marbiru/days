@@ -107,5 +107,8 @@ a {
 }
 
 .footer_link {
+    font-size: 14px;
+    font-family: "Gotham", sans-serif;
     color: #F55E78;
+    text-decoration: underline;
 }
