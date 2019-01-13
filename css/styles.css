@@ -92,13 +92,17 @@ a {
   border: 2px solid black;
   font-family: "Gotham", sans-serif;
   font-size: 16px;
-  width: 100%;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #again {
-  width: 100%;
   font-size: 18px;
   background-color: #f5e85e99;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #footer {
