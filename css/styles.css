@@ -88,7 +88,7 @@ a {
 
 #reminder {
   color: black;
-  background-color: yellow;
+  background-color: #5e93f566;
   border: 2px solid black;
   font-family: "Gotham", sans-serif;
   font-size: 16px;
@@ -98,7 +98,7 @@ a {
 #again {
   width: 100%;
   font-size: 18px;
-  background-color: yellow;
+  background-color: #f5e85e99;
 }
 
 #footer {
