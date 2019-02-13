@@ -35,7 +35,7 @@ a {
 }
 
 #submit {
-  background-color: yellow;
+  background-color: #f5e85e99;
   margin-top: 10px;
   font-size: 22px; 
   width: 100%;
@@ -115,4 +115,13 @@ a {
     font-family: "Gotham", sans-serif;
     color: #F55E78;
     text-decoration: underline;
+}
+
+/* standalone This Many Years pages */
+
+.emphasize_numbers {
+    line-height: 90%;
+    font-size: 42px;
+    font-weight: bold;
+    color: #F55E78;
 }
