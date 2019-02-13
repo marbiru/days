@@ -116,3 +116,12 @@ a {
     color: #F55E78;
     text-decoration: underline;
 }
+
+/* standalone This Many Years pages */
+
+.emphasize_numbers {
+    line-height: 90%;
+    font-size: 42px;
+    font-weight: bold;
+    color: #F55E78;
+}
