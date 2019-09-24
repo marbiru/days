@@ -1,0 +1,62 @@
+.navbar {
+    border-bottom:1px solid #cccccc;
+    height: 45px;
+}
+
+.container {
+    padding-top: 70px;
+}
+
+h2 {
+    color: black;
+    font-weight: bold;
+    font-size: 30px;
+    font-family: "Gotham", sans-serif;
+}
+
+p {
+    color: black;
+    font-family: "Gotham", sans-serif;
+}        
+         
+.page-content {
+    text-align: center;
+    background: white;
+}       
+
+#what_dob {
+  font-size: 20px;
+  padding: 10px;
+}
+
+input {
+    text-align: center;
+    border: 2px solid black;
+}
+
+.button {
+  color: black;
+  background-color: #d9d9d9;
+  border: 2px solid black;
+  border-radius: 0px;
+  font-family: "Gotham", sans-serif;
+}
+
+#submit {
+  background-color: #f5e85e99;
+  margin-top: 20px;
+  font-size: 22px;
+  width: 30%;
+  font-size: 18px;
+}
+
+.footer {
+    padding: 25px;
+    font-size: 14px;
+    font-family: "Gotham", sans-serif;
+}
+
+.footer .footer_link {
+    color: #F55E78;
+    text-decoration: underline;
+}
