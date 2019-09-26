@@ -1,58 +1,61 @@
 import React from 'react';
 import './App.css';
-import Navbar from 'react-bootstrap/Navbar';
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
 import DatePicker from 'react-datepicker';
 import "react-datepicker/dist/react-datepicker.css";
+import { Link } from "react-router-dom";
 
 class DateSelector extends React.Component {
     constructor(props) {
         super(props);
-        this.state = {date: new Date()};
+        let now = new Date();
+        this.state = {
+            date: now,
+            date_iso8601: now.toISOString().slice(0,10)
+        };
         this.setDate = date => { 
-            this.setState({date: date});
-            console.log(date);
+            this.setState({
+                date: date,
+                date_iso8601: date.toISOString().slice(0,10)
+            });
         };
     }
 
     render() {
         return (
-            <Col className="page-content">
-                <h2>
-                    HOW MANY DAYS
-                    <br />
-                    OLD ARE YOU?
-                </h2>
+        <div>
+            <h2>
+                HOW MANY DAYS
+                <br />
+                OLD ARE YOU?
+            </h2>
 
-                <p id="what_dob">
-                    WHAT'S YOUR
-                    <br />
-                    DATE OF BIRTH?
-                </p>
+            <p id="what_dob">
+                WHAT'S YOUR
+                <br />
+                DATE OF BIRTH?
+            </p>
 
-                <div>
-                    <DatePicker 
-                        selected={this.state.date}
-                        onChange={date => this.setDate(date)}
-                        dateFormatCalendar={"MMM yyy"}
-                        minDate={new Date("1850-01-01")}
-                        maxDate={new Date()}
-                        showYearDropdown
-                        showMonthDropdown
-                        dropdownMode="select"
-                    />
-                </div>
+            <div>
+                <DatePicker 
+                    selected={this.state.date}
+                    onChange={date => this.setDate(date)}
+                    dateFormatCalendar={"MMM yyy"}
+                    minDate={new Date("1850-01-01")}
+                    maxDate={new Date()}
+                    showYearDropdown
+                    showMonthDropdown
+                    dropdownMode="select"
+                />
+            </div>
 
-                <div>
-                    <button class="button" id="submit" type="submit" name="submit">LET'S&nbsp;GO</button>
-                </div>
+            <Link to={`/date/${this.state.date_iso8601}`}>
+                <button class="button" id="submit" type="submit" name="submit">LET'S&nbsp;GO</button>
+            </Link>
 
-                <p className="footer"> 
-                   Do you like podcasts? Get the best podcast recommendations from <a href="https://thelistener.substack.com/c/days-old" className="footer_link">The Listener</a> with this special free gift.
-                </p>
-            </Col>
+            <p className="footer"> 
+               Do you like podcasts? Get the best podcast recommendations from <a href="https://thelistener.substack.com/c/days-old" className="footer_link">The Listener</a> with this special free gift.
+            </p>
+        </div>
         );
     }
 }

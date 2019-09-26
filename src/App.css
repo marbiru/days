@@ -24,6 +24,21 @@ p {
     background: white;
 }       
 
+.app_text {
+    font-size: 30px;
+    padding: 10px;
+    font-family: "Gotham", sans-serif;
+}
+
+.app_text a {
+    color: #F55E78;
+    text-decoration: underline;
+}
+
+.app_icon {
+    color: #F55E78;
+}
+
 #what_dob {
   font-size: 20px;
   padding: 10px;
@@ -60,3 +75,34 @@ input {
     color: #F55E78;
     text-decoration: underline;
 }
+
+.you_will_be {
+  font-size: 20px;
+  margin-top: -5px;
+}
+
+#today_you_are {
+  font-size: 26px;
+  margin-top: -10px;
+}
+
+#days_old_output {
+    line-height: 90%;
+    font-size: 42px;
+    font-weight: bold;
+    color: #F55E78;
+}
+
+#upcoming_milestones {
+    color: #F55E78;
+    font-weight: bold;
+    font-size: 18px;
+    font-family: "Gotham", sans-serif;
+    padding-top: 10px;
+}
+
+#big_milestone_output, #small_milestone_output, #small_milestone_date_output, #big_milestone_date_output {
+    color: #F55E78;
+    font-weight: bold;
+}
+
