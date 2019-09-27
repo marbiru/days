@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import SignUpForm from './SignupForm.js';
+import { Link } from "react-router-dom";
 
 class DaysOld extends React.Component {
     constructor(props) {
@@ -17,7 +18,7 @@ class DaysOld extends React.Component {
         }
 
         // Validate user input
-        if (date && date_iso8601 == props.match.params.date) {
+        if (date && date_iso8601 === props.match.params.date) {
             this.state = {
                 date: date,
                 date_iso8601: date_iso8601
@@ -40,7 +41,7 @@ class DaysOld extends React.Component {
             candidate_small_milestones.push(Math.floor(days_old / 100) * 100 + 100);
         } else {
             let candidate = Math.floor(days_old / 1000) * 1000 + 1000;
-            if (candidate % 5000 != 0) { 
+            if (candidate % 5000 !== 0) { 
                 candidate_small_milestones.push(candidate);
             } else {
                 candidate_small_milestones.push(candidate + 1000);
@@ -52,17 +53,19 @@ class DaysOld extends React.Component {
         let next_small_milestone = candidate_small_milestones.sort((a,b) => a-b)[0];
         
         this.state.days_old = days_old;
-        this.state.next_big_milestone = next_big_milestone
-        this.state.next_big_milestone_date = new Date(date + next_big_milestone * day_ms)
-        this.state.next_small_milestone = next_small_milestone
-        this.state.next_small_milestone_date = new Date(date + next_small_milestone * day_ms)
+        this.state.next_big_milestone = next_big_milestone;
+        this.state.next_big_milestone_date = new Date();
+        this.state.next_big_milestone_date.setDate(date.getDate() + next_big_milestone - days_old);
+        this.state.next_small_milestone = next_small_milestone;
+        this.state.next_small_milestone_date = new Date();
+        this.state.next_small_milestone_date.setDate(date.getDate() + next_small_milestone - days_old);
     }
 
     render_invalid_date() {
         return (
             <div>
                 <h2>WE'RE SORRY</h2>
-                <i className="fa fa-calendar-times fa-5x app_icon"></i>
+                <i className="pink-icon fa fa-calendar-times fa-5x app_icon"></i>
                 <p className="app_text">WE DON'T RECOGNIZE THAT DATE</p>
                 <Link to="/">
                     <button class="button" id="submit" type="submit" name="submit">TO THE FRONT PAGE</button>
@@ -99,6 +102,8 @@ class DaysOld extends React.Component {
                     <br />
                     ON <span className="emphasis" id="big_milestone_date_output">{this.state.next_big_milestone_date.toDateString()}</span>
                 </p>
+
+                <SignUpForm date={this.state.date} />
 
                 <Link to="/">
                     <button className="button" id="submit" type="submit" name="submit">START OVER</button>
