@@ -15,7 +15,9 @@ class App extends React.Component {
             <Router>
                 <div>
                 <Navbar bg="light" fixed="top" expand="lg">
-                    <Navbar.Brand className="mx-auto">DAYSOLD.COM</Navbar.Brand>
+                    <Navbar.Brand className="unselectable mx-auto">
+                        <Link to="/">DAYSOLD.COM</Link>
+                    </Navbar.Brand>
                 </Navbar>
                 <Container>
                     <Row>
