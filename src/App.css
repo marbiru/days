@@ -106,3 +106,31 @@ input {
     font-weight: bold;
 }
 
+.pad-form {
+    padding-top: 15px;
+}
+
+.unselectable {
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+}
+
+.pink-icon {
+    color: #F55E78;
+}
+
+.navbar-brand a {
+    color: black;
+}
+
+.navbar-brand a:hover {
+    color: black;
+    text-decoration: none;
+}
+
+.navbar-brand a:active {
+    color: black;
+    text-decoration: none;
+}
