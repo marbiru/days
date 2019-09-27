@@ -49,7 +49,7 @@ class DateSelector extends React.Component {
             </div>
 
             <Link to={`/date/${this.state.date_iso8601}`}>
-                <button class="button" id="submit" type="submit" name="submit">LET'S&nbsp;GO</button>
+                <button className="button" id="submit" type="submit" name="submit">LET'S&nbsp;GO</button>
             </Link>
 
             <p className="footer"> 
