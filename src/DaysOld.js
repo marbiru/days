@@ -68,7 +68,7 @@ class DaysOld extends React.Component {
                 <i className="pink-icon fa fa-calendar-times fa-5x app_icon"></i>
                 <p className="app_text">WE DON'T RECOGNIZE THAT DATE</p>
                 <Link to="/">
-                    <button class="button" id="submit" type="submit" name="submit">TO THE FRONT PAGE</button>
+                    <button className="button" id="submit" type="submit" name="submit">TO THE FRONT PAGE</button>
                 </Link>
             </div>
         );
