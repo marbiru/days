@@ -54,11 +54,9 @@ class DaysOld extends React.Component {
         
         this.state.days_old = days_old;
         this.state.next_big_milestone = next_big_milestone;
-        this.state.next_big_milestone_date = new Date();
-        this.state.next_big_milestone_date.setDate(date.getDate() + next_big_milestone - days_old);
+        this.state.next_big_milestone_date = new Date(date.getTime() + next_big_milestone * day_ms);
         this.state.next_small_milestone = next_small_milestone;
-        this.state.next_small_milestone_date = new Date();
-        this.state.next_small_milestone_date.setDate(date.getDate() + next_small_milestone - days_old);
+        this.state.next_small_milestone_date = new Date(date.getTime() + next_small_milestone * day_ms);
     }
 
     render_invalid_date() {
