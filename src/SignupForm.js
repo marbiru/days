@@ -83,14 +83,14 @@ class SignUpForm extends React.Component {
         <Col md={{span: 4, offset: 4}}>
         <Card>
         <Card.Body>
-        <Card.Subtitle>Were you born on {this.props.date.toDateString()}? Get an email reminder for your next milestone.</Card.Subtitle>
+        <Card.Subtitle>Get an email reminder for your next milestone.</Card.Subtitle>
                 <Form noValidate className="pad-form" validated={this.state.validate} onSubmit={this.handleSubmit}>
-                    <Form.Group controlId="formName">
-                      <Form.Control required maxLength="50" name="name" type="text" placeholder="Name" />
-                    </Form.Group>
-
                     <Form.Group controlId="formEmail">
                       <Form.Control required name='email' type="email" placeholder="E-mail" />
+                    </Form.Group>
+
+                    <Form.Group controlId="formName">
+                      <Form.Control maxLength="50" name="name" type="text" placeholder="Name (optional)" />
                     </Form.Group>
 
                     <Button variant="outline-dark flat" type="submit" disabled={this.state.pending}>
