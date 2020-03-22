@@ -108,7 +108,7 @@ class DaysOld extends React.Component {
                 </Link>
 
                 <p className="footer"> 
-                   Do you like podcasts? Get the best podcast recommendations from <a href="https://thelistener.substack.com/c/days-old" className="footer_link">The Listener</a> with this special free gift.
+                   Do you like podcasts? Get the best podcast recommendations from <a href="https://thelistener.co/" className="footer_link">The Listener</a>.
                 </p>
 
             </div>
